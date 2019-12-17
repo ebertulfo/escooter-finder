@@ -1,0 +1,17 @@
+{
+  "name": "my-awesome-app",
+  "version": "1.0.0",
+  "description": "easily the next facebook",
+  "keywords": [],
+  "dependencies": {
+    "react": "16.4.0",
+    "react-dom": "16.4",
+    "next": "9.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
