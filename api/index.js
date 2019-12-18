@@ -29,8 +29,8 @@ app.get('/beam/search', async (req, res) => {
         res.status(500).send('Invalid Coordinates')
 
     //Do search in the Tile38 DB
-    let result = await client.withinQuery('fleet')
-        .circle(
+    let result = await client.nearbyQuery('fleet')
+        .point(
             lat,
             lng,
             radius
