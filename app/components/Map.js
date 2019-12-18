@@ -4,18 +4,18 @@ import { meters2ScreenPixels } from 'google-map-react/utils'
 const Scooter = () => {
   return (
     <div style={{
-      height: "15px",
-      width: "15px",
-      border: "2px solid #4D1FFF",
-      borderRadius: "50%",
-      backgroundColor: "white",
-      padding: "5px"
+      height: '15px',
+      width: '15px',
+      border: '2px solid #4D1FFF',
+      borderRadius: '50%',
+      backgroundColor: 'white',
+      padding: '5px'
     }}>
       <img style={{
-        height: "100%",
-        width: "100%",
-        border: "white",
-      }} src="https://img.icons8.com/ios-glyphs/30/000000/kick-scooter.png" />
+        height: '100%',
+        width: '100%',
+        border: 'white',
+      }} src='https://img.icons8.com/ios-glyphs/30/000000/kick-scooter.png' />
     </div>
   );
 }
@@ -53,7 +53,7 @@ export const Map = (props) => {
   return (
     <div style={{ height: '100vh', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyCo97i2qxMBu1KhHqQ7H7E13xYbDIkVQJ4" }}
+        bootstrapURLKeys={{ key: 'AIzaSyCo97i2qxMBu1KhHqQ7H7E13xYbDIkVQJ4' }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
         onClick={props.onMapClick}
