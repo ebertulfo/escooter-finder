@@ -6,8 +6,8 @@ import { getScooters } from '../services/api';
 export default () => {
   //Search Component state
   const [search, setSearch] = useState({
-    radius: 500,
-    numberOfScooters: 10,
+    radius: 25000,
+    numberOfScooters: 200,
     lat: 1.3607474,
     lng: 103.7986503
   })
@@ -33,11 +33,12 @@ export default () => {
   }
 
   return (
-    <div>
+    <div style={{fontFamily:'Calibri', display: 'flex'}}>
       <Search
         {...search}
         handleSearch={handleSearch}
         handleFieldChange={handleFieldChange}
+        style={{padding: '20px'}}
       />
       <Map
         onMapClick={handleMapClick}
