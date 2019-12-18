@@ -53,7 +53,7 @@ export const Map = (props) => {
   return (
     <div style={{ height: '100vh', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: 'AIzaSyCo97i2qxMBu1KhHqQ7H7E13xYbDIkVQJ4' }}
+        bootstrapURLKeys={{ key: '<Enter your google API here>' }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
         onClick={props.onMapClick}
